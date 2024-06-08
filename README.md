@@ -1,4 +1,4 @@
-# Monkle Pack v1.0.0
+# Monkle Pack v1.0.1
 ## by Monkle
 https://github.com/MonkeyMonko/MonklePack
 
@@ -9,4 +9,5 @@ Requires the latest version of [BepInEx 5](https://github.com/BepInEx/BepInEx). 
 Mod pack purely for my own testing
 
  - Adds pedro music to jester
- - Adds Tom and Jerry scream to Dogs
+ - Adds Tom and Jerry screams to Dogs
+ - Speeds up player when afraid - still a wip
