@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Logging;
 using GameNetcodeStuff;
 using HarmonyLib;
 using JetBrains.Annotations;
-using TMPro;
+using MemeSoundboard;
 using UnityEngine;
 
 namespace MonklePack
@@ -19,7 +20,7 @@ namespace MonklePack
     {
         public const string ModGuid = "Monkle.VariousMods";
         public const string ModName = "MonklePack";
-        public const string ModVersion = "1.0.0.0";
+        public const string ModVersion = "1.0.0.2";
 
         private readonly Harmony _harmony = new Harmony(ModGuid);
 
@@ -32,6 +33,8 @@ namespace MonklePack
         private static ManualLogSource _monkleLogger;
         internal static MonkleConfig BoundConfig { get; private set; } = null;
         private static AssetBundle _itemAssetBundle;
+        
+        [CanBeNull] public static AudioClip[] RadioTracks;
 
         void Awake()
         {
@@ -46,26 +49,40 @@ namespace MonklePack
             LogMessage("location " + location);
             var bundleLocation = location.TrimEnd("MonklePack.dll".ToCharArray()) + "monklepack";
             _itemAssetBundle = AssetBundle.LoadFromFile(bundleLocation);
+
+            var clips = _itemAssetBundle.LoadAllAssets<AudioClip>();
+
+            RadioTracks = clips.Where(x => Regex.IsMatch(x.name, @"^\d")).OrderBy(_ => Guid.NewGuid()).ToArray();
+            foreach (var track in RadioTracks)
+            {
+                LogMessage(track.name);
+            }
+            
             if (TomScreamClips != null)
             {
                 TomScreamClips.Add(new AudioWeight
                 {
-                    Sound = _itemAssetBundle.LoadAsset<AudioClip>("Assets/TomScream.mp3"),
+                    Sound = clips.FirstOrDefault(x => x.name == "TomScream"),
                     Weight = 35
                 });
                 TomScreamClips.Add(new AudioWeight
                 {
-                    Sound = _itemAssetBundle.LoadAsset<AudioClip>("Assets/TomScream2.mp3"),
+                    Sound = clips.FirstOrDefault(x => x.name == "TomScream2"),
                     Weight = 15
                 });
                 TomScreamClips.Add(new AudioWeight
                 {
-                    Sound = _itemAssetBundle.LoadAsset<AudioClip>("Assets/UghSound.mp3"),
+                    Sound = clips.FirstOrDefault(x => x.name == "UghSound"),
                     Weight = 10
                 });
             }
-
-            Pedro = _itemAssetBundle.LoadAsset<AudioClip>("Assets/Pedro.mp3");
+            
+            MemeSoundboardBase.AddNewSound("Four naan", clips.FirstOrDefault(x => x.name == "FourNaan"));
+            MemeSoundboardBase.AddNewSound("Suspicious", clips.FirstOrDefault(x => x.name == "Suspicious"));
+            MemeSoundboardBase.AddNewSound("Here comes the boi", clips.FirstOrDefault(x => x.name == "HereComesTheBoi"));
+            MemeSoundboardBase.AddNewSound("Cheeky Monkey", clips.FirstOrDefault(x => x.name == "CheekyMonkey"));
+            
+            Pedro = clips.FirstOrDefault(x => x.name == "Pedro");
             
             _monkleLogger.LogMessage(ModGuid + " has loaded succesfully.");
             LogMessage("has loaded succesfully.");
@@ -76,6 +93,8 @@ namespace MonklePack
                 _harmony.PatchAll(typeof(JesterPedroMod));
             if(BoundConfig.EnableFear.Value)
                 _harmony.PatchAll(typeof(PlayerScaredMod));
+            if(BoundConfig.EnableCruiserTunes.Value)
+                _harmony.PatchAll(typeof(CruiserMod));
         }
 
         public static void LogMessage(string message)
@@ -91,6 +110,7 @@ namespace MonklePack
         public readonly ConfigEntry<bool> EnableTomScream;
         public readonly ConfigEntry<bool> EnablePedro;
         public readonly ConfigEntry<bool> EnableFear;
+        public readonly ConfigEntry<bool> EnableCruiserTunes;
 
         public MonkleConfig(ConfigFile cfg)
         {
@@ -122,6 +142,13 @@ namespace MonklePack
                 "EnableFear",
                 false,
                 "Should fear speed you up"
+            );
+            
+            EnableCruiserTunes = cfg.Bind(
+                "General",
+                "EnableCruiserTunes",
+                true,
+                "Want some tuneskies"
             );
             
             ClearOrphanedEntries(cfg); 
@@ -239,4 +266,25 @@ namespace MonklePack
         }
     }
     
+    [HarmonyPatch(typeof(VehicleController))]
+    [HarmonyPatch("Start")]
+    class CruiserMod
+    {
+        [HarmonyPostfix]
+        static void Postfix(ref VehicleController __instance)
+        {
+            __instance.radioClips = MonklePackModBase.RadioTracks;
+        }
+    }
+    
+    // [HarmonyPatch(typeof(ClaySurgeonAI))]
+    // [HarmonyPatch("Update")]
+    // class BarberMod
+    // {
+    //     [HarmonyPostfix]
+    //     static void Postfix(ref ClaySurgeonAI __instance)
+    //     {
+    //         __instance.
+    //     }
+    // }
 }

@@ -1,8 +1,11 @@
+C:\Users\Michael\RiderProjects\MonklePack\MonklePack\obj\Release\MonklePack.csproj.AssemblyReference.cache
+C:\Users\Michael\RiderProjects\MonklePack\MonklePack\obj\Release\MonklePack.csproj.CoreCompileInputs.cache
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\MonklePack.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\MonklePack.pdb
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\0Harmony.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Assembly-CSharp.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\BepInEx.dll
+C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\MemeSoundboard.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.AI.Navigation.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.Animation.Rigging.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.Animation.Rigging.DocCodeExamples.dll
@@ -37,11 +40,13 @@ C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.RenderPip
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.RenderPipelines.HighDefinition.Runtime.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.TextMeshPro.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.AssetBundleModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.AudioModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.CoreModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.UI.dll
+C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.UIModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.UnityWebRequestAssetBundleModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Mono.Cecil.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\MonoMod.Utils.dll
@@ -51,15 +56,14 @@ C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.Ani
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.PhysicsModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.AIModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.ParticleSystemModule.dll
-C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.TextMeshPro.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Facepunch.Steamworks.Win64.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.VFXModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.TerrainModule.dll
-C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.UIModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\DissonanceVoip.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Assembly-CSharp-firstpass.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Facepunch Transport for Netcode for GameObjects.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.VideoModule.dll
+C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.VehiclesModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.Physics2DModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.TilemapModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\ClientNetworkTransform.dll
@@ -77,6 +81,8 @@ C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.Sub
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.VisualEffectGraph.Runtime.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.NVIDIAModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.ImageConversionModule.dll
+C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.TextCoreFontEngineModule.dll
+C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.TextRenderingModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.DSPGraphModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.UnityCurlModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.ContentLoadModule.dll
@@ -88,7 +94,6 @@ C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.Uni
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.UnityAnalyticsCommonModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.PerformanceReportingModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.SharedInternalsModule.dll
-C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.TextRenderingModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.ClothModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.ClusterInputModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.ClusterRendererModule.dll
@@ -105,10 +110,8 @@ C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.Gam
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.SpriteMaskModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.StreamingModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.TerrainPhysicsModule.dll
-C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.TextCoreFontEngineModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.TextCoreTextEngineModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.SpriteShapeModule.dll
-C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.VehiclesModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.WindModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\UnityEngine.ARModule.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\Unity.Services.Core.Internal.dll
@@ -119,8 +122,6 @@ C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\0Harmony.xml
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\BepInEx.xml
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\MonoMod.Utils.xml
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\bin\Release\MonoMod.RuntimeDetour.xml
-C:\Users\Michael\RiderProjects\MonklePack\MonklePack\obj\Release\MonklePack.csproj.AssemblyReference.cache
-C:\Users\Michael\RiderProjects\MonklePack\MonklePack\obj\Release\MonklePack.csproj.CoreCompileInputs.cache
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\obj\Release\MonklePack.csproj.CopyComplete
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\obj\Release\MonklePack.dll
 C:\Users\Michael\RiderProjects\MonklePack\MonklePack\obj\Release\MonklePack.pdb
